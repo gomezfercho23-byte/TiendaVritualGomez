@@ -1,0 +1,177 @@
+/* RESET BÁSICO Y FUENTES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ENCABEZADO */
+.header {
+    background-color: #ffffff;
+    color: #0f172a;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.info-admin {
+    font-size: 0.95rem;
+    margin-top: 5px;
+    color: #64748b;
+}
+
+/* BANNER DE BIENVENIDA */
+.banner {
+    background-color: #6a7283;
+    color: #f8fafc;
+    text-align: center;
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* CONTENEDOR GENERAL */
+.contenedor {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.descripcion {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+h2 {
+    color: #0f172a;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* GRID Y TARJETAS DE SABORES */
+.grid-sabores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta-helado {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 230px;
+    text-align: center;
+    padding-bottom: 15px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* EFECTO VISUAL HOVER */
+.tarjeta-helado:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-color: #cbd5e1;
+}
+
+/* IMÁGENES UNIFORMES */
+.tarjeta-helado img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tarjeta-helado h3 {
+    margin: 12px 0 5px;
+    font-size: 1.1rem;
+    color: #1e293b;
+}
+
+.precio {
+    color: #0d9488; /* Verde azulado (Teal) minimalista */
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* ESTADO DE DISPONIBILIDAD */
+.estado {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px;
+    margin: 5px 10px 10px;
+    border-radius: 6px;
+}
+
+.disponible {
+    background-color: #f0fdf4;
+    color: #15803d;
+    border: 1px solid #dcfce7;
+}
+
+.agotado {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fee2e2;
+}
+
+/* BOTÓN CON EFECTO HOVER */
+.btn-comprar {
+    background-color: #0284c7; /* Azul minimalista moderno */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #0369a1;
+}
+
+/* PROMOCIÓN DEL DÍA */
+.caja-promocion {
+    background-color: #f0fdf4;
+    color: #166534;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 1px solid #bbf7d0;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    margin-top: auto;
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
